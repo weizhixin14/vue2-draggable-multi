@@ -96,7 +96,7 @@ export default [
     external,
     plugins: basePlugins,
     output: {
-      file: "dist/vue-draggable-multi.umd.js",
+      file: "dist/vue2-draggable-multi.umd.js",
       format: "umd",
       name: "VueDraggable",
       globals,

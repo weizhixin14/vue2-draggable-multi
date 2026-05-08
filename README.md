@@ -1,11 +1,11 @@
-# vue-draggable-multi
+# vue2-draggable-multi
 
 This library is a secondary development based on the vuedraggable@2.x (SortableJS/Vue.Draggable) source code, supporting multi-select drag and drop (MultiDrag).
 
 ### Installation
 
 ```bash
-npm i vue-draggable-multi -S
+npm i vue2-draggable-multi -S
 ```
 
 ### Usage
@@ -29,7 +29,7 @@ Sortable.mount(new MultiDrag());
 Enable multi-drag by setting the `multi-drag` prop to `true`.
 
 ```vue
-<VueDraggableMulti :multi-drag="true" ...>
+<Vue2DraggableMulti :multi-drag="true" ...>
 
-// import VueDraggableMulti from "vue-draggable-multi";
+// import Vue2DraggableMulti from "vue2-draggable-multi";
 ```
