@@ -1,0 +1,48 @@
+{
+  "name": "vue2-draggable-multi",
+  "version": "1.0.0",
+  "description": "Vue 2 draggable component with multi-drag support based on SortableJS",
+  "type": "module",
+  "main": "dist/vue2-draggable-multi.cjs.js",
+  "module": "dist/vue2-draggable-multi.esm.js",
+  "unpkg": "dist/vue2-draggable-multi.umd.min.js",
+  "files": [
+    "dist",
+    "package.json",
+    "README.md",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w"
+  },
+  "peerDependencies": {
+    "vue": ">=2.6.12 <3",
+    "sortablejs": "^1.15.0"
+  },
+  "keywords": [
+    "vue",
+    "vue2",
+    "draggable",
+    "sortable",
+    "vue-draggable",
+    "multi",
+    "multi-drag"
+  ],
+  "author": "weizhixin",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/weizhixin14/vue2-draggable-multi.git"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.29.0",
+    "@babel/preset-env": "^7.29.5",
+    "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-commonjs": "^28.0.3",
+    "@rollup/plugin-node-resolve": "^16.0.3",
+    "@rollup/plugin-terser": "^0.4.4",
+    "rollup": "^4.40.0",
+    "sortablejs": "^1.15.6"
+  }
+}
