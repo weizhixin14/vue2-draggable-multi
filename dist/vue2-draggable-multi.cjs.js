@@ -1,5 +1,5 @@
 /*!
- * vue2-draggable-multi v1.0.0
+ * vue2-draggable-multi v1.0.1
  * (c) 2026 weizhixin
  * Released under the MIT License.
  */
