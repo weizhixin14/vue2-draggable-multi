@@ -14,21 +14,9 @@ For general usage, see [vuedraggable](https://github.com/SortableJS/Vue.Draggabl
 
 ### Multi-select
 
-#### 1. Mount the Plugin
-
-`MultiDrag` need to be mounted before using the library.
-
-```js
-import Sortable, { MultiDrag } from "sortablejs";
-
-Sortable.mount(new MultiDrag());
-```
-
-#### 2. Enable multi-drag
-
 Enable multi-drag by setting the `multi-drag` prop to `true`.
 
-```vue
+```js
 <Vue2DraggableMulti :multi-drag="true" ...>
 
 // import Vue2DraggableMulti from "vue2-draggable-multi";
