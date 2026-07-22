@@ -1,5 +1,5 @@
 /*!
- * vue2-draggable-multi v1.0.1
+ * vue2-draggable-multi v1.0.2
  * (c) 2026 weizhixin
  * Released under the MIT License.
  */
@@ -416,11 +416,14 @@
           if (evt.items && evt.items.length) {
             const localItems = [];
             evt.items.forEach(item => {
+              // 多选拖拽时，非chosen元素会游离在dom树外，但是依旧需要走多选逻辑
               if (item.parentNode === null || item.parentNode === this.rootContainer) {
                 localItems.push(item);
               } else {
-                this.$emit('multiDeselect', item);
-                Sortable.utils.deselect(item);
+                this.$emit('updateListContext', item);
+                if (item && item.parentNode) {
+                  Sortable.utils.deselect(item);
+                }
               }
             });
             if (localItems.length > 1) {
@@ -624,8 +627,10 @@
         },
         onDragEnd(evt) {
           evt.items.forEach(item => {
-            this.$emit('multiDeselect', item);
-            Sortable.utils.deselect(item);
+            this.$emit('updateListContext', item);
+            if (item && item.parentNode) {
+              Sortable.utils.deselect(item);
+            }
           });
           this.computeIndexes();
           draggingElement = null;

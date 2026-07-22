@@ -1,6 +1,6 @@
 {
   "name": "vue2-draggable-multi",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Vue 2 draggable component with multi-drag support based on SortableJS",
   "type": "module",
   "main": "dist/vue2-draggable-multi.cjs.js",
